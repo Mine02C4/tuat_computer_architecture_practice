@@ -1,0 +1,4 @@
+*.o
+*.S
+*.text.bin
+*.txt
