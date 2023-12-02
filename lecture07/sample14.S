@@ -16,7 +16,7 @@ end_loop:
 routine00:
   addi s0, zero, 1
   beq a0, zero, routine00_return
-  beq s0, s0, routine00_return
+  beq a0, s0, routine00_return
   addi a0, a0, -2
   jal ra, routine00
   addi s1, a0, 0
