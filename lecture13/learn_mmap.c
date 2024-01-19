@@ -31,6 +31,7 @@ int main() {
   }
   int page_size = getpagesize();
   size_t map_size = (dummy_file_size / page_size + 1) * page_size;
+  printf("page size = %d Bytes\nCalculated map size = %zu Bytes\n", page_size, map_size);
   void *map = mmap(NULL, map_size, PROT_WRITE, MAP_SHARED, fd, 0);
   if (map == MAP_FAILED) {
     fprintf(stderr, "Failed to mmap temp file. errno = %d\n%s\n", errno, strerror(errno));
