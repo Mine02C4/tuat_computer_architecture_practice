@@ -3,10 +3,10 @@
 #pragma qtrvsim show csrdock
 #pragma qtrvsim show memory
 
-.globl　main
+.globl main
 main:
   la s0, str01
-  li s1, str01_length
+  la s1, str01_length
   addi a7, zero, 64 // load syscall "write" number
   addi a0, zero, 1 // load file descriptor (1 = stdout)
   addi a1, s0, 0 // load text address
