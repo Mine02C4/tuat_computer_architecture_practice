@@ -22,9 +22,9 @@ end_loop:
   str03: .ascii "It is neither 1 nor 2\n"
   str04: .ascii "X has been inputted\n"
   str_sentinel:
-  .equ str01_length, str02 - str01
-  .equ str02_length, str03 - str02
-  .equ str03_length, str04 - str03
-  .equ str04_length, str_sentinel - str04
+  .equ str01_length, str02-str01
+  .equ str02_length, str03-str02
+  .equ str03_length, str04-str03
+  .equ str04_length, str_sentinel-str04
 
 #pragma qtrvsim tab core
