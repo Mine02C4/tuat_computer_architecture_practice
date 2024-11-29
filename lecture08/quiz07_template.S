@@ -17,9 +17,9 @@ main:
   ecall
 
   addi a0, s0, 0
-  jal print_int
+  jal ra, print_int
 
-  jal print_line_feed
+  jal ra, print_line_feed
 
 end_loop:
   ebreak
