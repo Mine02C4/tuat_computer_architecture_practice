@@ -3,7 +3,7 @@
 #pragma qtrvsim show csrdock
 #pragma qtrvsim show memory
 
-.globl　main
+.globl main
 main:
   li s0,100
   li s1,200

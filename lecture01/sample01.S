@@ -5,7 +5,7 @@
 
 .equ WORKING_MEMORY_BASE, 0x0100
 
-.globl　main
+.globl main
 main:
   addi t0, zero, 12
   addi t1, zero, 24

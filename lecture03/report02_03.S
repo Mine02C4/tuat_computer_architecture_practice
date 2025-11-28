@@ -6,7 +6,7 @@
 # コメントが Write で始まる行を続きのコメントに従い生めよ
 # array_1からスタートするアドレスは長さ3の符号付き32-bit整数の配列(C言語で言う int32_t array_1[3];)とみなす
 
-.globl　main
+.globl main
 main:
   # Write t0 レジスタに array_1 の先頭アドレスを格納
   li t1, 0
